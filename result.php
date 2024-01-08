@@ -1,6 +1,6 @@
 <?php
-$badword = $_POST["badword"];
-$paragraph = $_POST["paragraph"];
+$badword = strtolower($_POST["badword"]);
+$paragraph = strtolower($_POST["paragraph"]);
 $modified_paragraph = str_replace($badword, '***', $paragraph);
 $counter = substr_count($paragraph, $badword);
 ?>
@@ -30,7 +30,7 @@ $counter = substr_count($paragraph, $badword);
     <div class="container mt-5">
         <!-- Header -->
         <header>
-            <h1 class="text-center text-uppercase">Don't say it!</h1>
+            <h1 class="text-center text-uppercase mb-5">Don't say it!</h1>
         </header>
         <!-- /Header -->
 
