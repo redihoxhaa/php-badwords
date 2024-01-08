@@ -15,6 +15,13 @@
 /* #endregion HEADER */
 
 /* #region MAIN */
+.result {
+    font-size: 2rem;
+}
+
+.result.badword {
+    color: red;
+}
 
 /* #endregion MAIN */
 
